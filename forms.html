@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><!--bootstrap link-->
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Google fonts link Josefin Sans-->
+	<link rel="stylesheet" href="path/to/font-awesome/../css/font-awesome.min.css"><!--font awesome-->
+	<link rel="stylesheet" type="text/css" href="forms.css"><!--my stylesheet
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!--js ui-->
+	<script type="text/javascript" src="../JSDC2-Final/JS/kinderlog.js"></script>
+
+</head>
+
+	<div class="container-fluid">
+	
+	<body>
+
+	<!--This is my first row-->
+			<div id = "logoutNavigation">
+				<ul class="nav nav-tabs">
+				  <li role="presentation" class="active"><a href="kinderlog.html">Log Out</a></li>
+				</ul>
+			</div><!-- logoutNavigation -->
+
+
+		<header class="headerRow row col-md-12">
+				<img class="logo" src="images/LogoScopic.jpg" alt="kinderLogo" height="200" width="200">
+			<div class="page-header">
+		  		<h1>The easy way <small>to log their day!</small></h1>
+			</div><!--.page-header-->
+		</header>
+
+	<!-- This is my second row -->
+
+			<div id="exTab3" class="container">	
+				<ul  class="nav nav-pills">
+			<!-- <li class="active">
+        		<a  href="#1b" data-toggle="tab">Caregiver's Name</a>
+				</li> -->
+					<li><a href="#2b" data-toggle="tab">Child's Name</a>
+					</li>
+					<li><a href="#3b" data-toggle="tab">Activity</a>
+					</li>
+					<li><a href="#4b" data-toggle="tab">Duration</a>
+					</li>
+				</ul>
+
+	
+	
+	<form id="mainForm">
+		<div class="transbox container">
+
+		 <div class="tab-content clearfix">
+			<div class="tab-pane fade in active" id="1b">
+          		<!-- <h3> -->
+          			<!-- <section class="caregiversForm row col-offset-xs-12 col-md-4">
+						<div class="caregiversName">
+							<label for="caregiversName">
+							Please enter your name
+							</label>
+						</div>
+
+						<div class="inputBox">
+
+
+							<input type="text" name="caregiversName" value="Caregiver's Name" id="caregiversName">
+						</div> --><!--.inputBox
+
+					</section><
+				<!-- </h3> -->
+			</div>
+
+			<h3>
+			<section class="todaysDate"
+			<label for= "date">Select Today's Date</label>
+			<input type="date" id="todaysDate"/>
+			</section>
+			</h3>
+
+		<div class="tab-pane fade" id="2b">
+        	<h3>
+	          	<section class="childsNameForm">
+					<div class="childsName">
+						<label for= "childsName"> Please enter the child's name
+						</label>
+					</div>
+					<input type= "text" name="childsName" value="Child's Name" id="childsName">
+
+				</section><!--childsName-->
+			</h3>
+		</div>
+        <div class="tab-pane fade" id="3b">
+        	<h3>
+        		<section class= "activity">
+					 <div class="activity">	
+						<label for ="activity">Select an Activity</label>
+					</div> <!--activity -->
+					 <input type ="text" name ="activity" value ="activity" id="inputField">  
+						
+			
+					<select type= "select" name= "select" value= "select">
+						<option value = "Arrival">Arrival</option>
+						<option value = "Meal">Meal</option>
+						<option value = "Nap">Nap</option>
+						<option value = "Playdate">Playdate</option>
+						<option value = "Appointment">Appointment</option>
+						<option value = "Other">Other</option>
+					</select>
+				</section><!--activity section-->
+		</div>
+    	<div class="tab-pane fade" id="4b">
+	    	
+		      	<section class="durationSection">
+					<section class="activityDuration"> <!-- Total time that the activity took -->
+						<div class="activityDuration">
+							<label for="activityDuration">Duration</label>
+						</div>
+						<time datetime="PTDHMS" name="totalTime" value="totalTime">
+					</section>
+				</section>
+		</div>
+		</div><!--transbox-->
+		
+		<div class="nextBackBtns"
+		<button class="backBtn" -btn" type="button" class="btn btn-default btn-lg">Back</button>
+		<button class="nextBtn" type="button" class="btn btn-default btn-lg">Next</button>
+		</div>
+
+		<div class= submitBtn>
+		<button id="submit-btn" type="button" class="btn btn-primary btn-lg">Submit Log</button>
+		</div>
+	</form>
+	
+				<form id="notepad" class="clearfix row">
+						<!-- <h1 class="notepadTitle">Hi!This is what 
+							<div class="childsName"><input type = "text" name="childsName" value="Sloane" id="inputField"></div> did today...</h1> -->
+						
+						<ul class="dailyNotes">
+						
+						</ul>
+						<div class="clearAllButton">
+							<input type="button" value="Email Log" id="clear-all">
+					</div>
+					</form>
+		
+
+
+					<footer class="footerRow row col-md-12">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						
+
+				<p>Valentine Sakwa
+					JSDC2 Final Project</p>
+			</footer>
+
+
+		</body>
+	</div><!--container-fluid-->
+	<script src='https://code.jquery.com/jquery-2.2.3.min.js'></script> 
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>
+
